@@ -1,0 +1,287 @@
+/* Reset */
+body,html{font-family:OpenSans,Helvetica,Arial,sans-serif;color:#444}*{margin:0;padding:0;box-sizing:border-box}html{height:100%}body{min-height:100%;line-height:1;font-family:sans-serif}h1,h2,h3,h4,h5,h6{font-size:100%}button,code,input,optgroup,option,pre,select,textarea{font-size:100%;font-family:inherit}ol,ul{list-style:none}h1,h2,h3,h4,h5,h6{font-family:EnergySoft,Helvetica,Arial,sans-serif}*{scroll-behavior:smooth!important}
+/* site variables */
+html {
+     --main-txt-color: #31343d;
+     --bluegreen-bg: #92cccd;
+     --header-bg: #31343d;
+     --bluegreen-txt: #92cccd;
+     --darkblue-bg: #14284e;
+     --footer-bg: #31343d;
+     --light-bg: #f4f4f4;
+     --dark-bluegreen-txt: #268788;
+}
+
+::selection {
+     background:var(--bluegreen-bg);
+     color: var(--darkblue-bg);
+}
+/* start of the main styles */
+html {
+     scroll-behavior: smooth;
+     background-color: var(--main-txt-color);
+}
+body {
+     font-size:1rem;
+     color: var(--main-txt-color);
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     background: var(--light-bg);
+}
+p {
+     margin-bottom: 14px;
+}
+/* header */
+header {
+     display:flex;
+     justify-content: space-between;
+     background:var( --header-bg);
+     padding:1% 0;
+     align-items: center;
+     flex-direction:column;
+}
+.logo {
+     font-size:1.5rem;
+     padding: .5rem .5rem .5rem 3rem;
+     background: var(--bluegreen-bg);
+
+}
+nav {
+     padding-right:6%;
+}
+nav ul{
+     display: flex;
+     justify-content: space-between;
+     min-width: 300px;
+}
+nav li {
+     padding:.5em;
+    
+}
+nav a {
+     font-size:1.2rem;
+     color: #92cccd;
+     border-bottom: 4px var(--bluegreen-bg) solid;
+     padding: 0 1rem;
+     text-decoration: none;
+}
+/* hero */
+hero .blue-overlay {
+     position:absolute;
+     top:0;
+     background: var(--darkblue-bg);
+     
+     width:100%;
+     height:100%;
+     opacity:.5;
+     z-index: 2;
+
+}
+hero { 
+     position:relative;
+     padding: 2rem 0;
+     background-color:  var(--darkblue-bg);
+     background: url(/images/header-image.png) repeat-x;
+     display:flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items: flex-end;
+     min-height: 200px;
+     z-index: 1;
+}
+hero h1{ 
+     color:var(--main-txt-color);
+     background-color: var(--bluegreen-bg);
+     width:relative;
+     padding: 10px 100px 10px 10px;
+     font-size:2rem;
+     z-index:3;
+     
+}
+/* main */
+main {
+     width:95%;
+     margin:0 auto;
+}
+/* about me section */
+#about-me,#work,#contact-me {
+     display:flex;
+     flex-direction: column;
+     flex-wrap:wrap;
+     justify-content: space-between;
+     align-content: start;
+     padding: 0.5%;
+}
+.side{ 
+     width:100%;
+     display:flex;
+     flex-grow: 2;
+     background: #f4f4f4; 
+     padding: 3% 3% 3% 5%; 
+     justify-content: flex-start;
+    
+}
+.side h2 {
+     font-size:2.5rem; 
+     color:var(--darkblue-bg);
+     text-align: right;
+     line-height:1.2;
+}
+.content{
+     flex:9;
+     background: #f4f4f4;
+     padding:2% ;
+     border-left: none;
+     border-top: .3rem var(--darkblue-bg) solid;
+     line-height: 1.4;
+     width:100%
+}
+/* Work */
+#work .content {
+     border-left: none;
+     border-top: .3rem var(--darkblue-bg) solid;
+}
+.project:nth-child(1){
+     display:flex;
+     flex-direction: row;
+     width:100%;
+     height:300px;
+}
+#work .content a {
+     align-self: flex-end;
+     position:relative;
+     z-index:5;
+     color:var(--main-txt-color);
+     text-decoration:none;
+}
+#work .content a:visited {
+     color:var(--main-txt-color);
+     text-decoration:none;
+}
+.project-title {
+     align-self:flex-end;
+     position:relative;
+     background: var(--bluegreen-bg);
+     padding:1em;
+     margin-bottom:1em;
+     z-index:5;
+}
+/* project backgrounds */
+.report { background: url("/images/ambitsuccess-website.png") no-repeat; background-size: cover;}
+.wall { background: url("/images/ambitcares-website.png") no-repeat; background-size: cover;}
+.calculator { background: url("/images/note-taker-heroku.png") no-repeat; background-size: cover;}
+.puzzle { background: url("/images/puzzle.png") no-repeat; background-size: cover;}
+.buddy { background: url("/images/poppies.jpeg") no-repeat; background-size: cover;}
+
+.overlay{
+     position:absolute; 
+     width:100%; 
+     height:100%; 
+     background-color:var(--darkblue-bg); opacity:.8;
+     z-index: 1;
+     transition: all 0.5s ease-in-out;
+}
+
+.overlay:hover { 
+     opacity:0; 
+     transition: all 0.5s ease-in-out;
+}
+.project {
+     position:relative;
+     width:100%;
+     margin:1%;
+     border: .2em var(--bluegreen-bg) solid;
+     display:flex;
+     flex-direction: row;
+     min-height:9em;
+}
+/* Contact Me */
+#contact-me {
+     display:flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     
+}
+
+#contact-me a, #contact-me a:visited {
+     font-size:1.2rem;
+     color: var(--darkblue-bg);
+     border-bottom: 2px var(--darkblue-bg) solid;
+     padding: 0 1rem;
+     text-decoration: none;
+     align-self:center;
+     display:flex;
+}
+
+
+/* footer */
+footer {
+     background: var(--footer-bg);
+     display: flex;
+     flex-direction: row;
+     padding:2%;
+     justify-content: center;
+    
+}
+footer ul {
+     display: flex;
+     flex-direction: row;
+     flex-wrap:wrap;
+}
+footer .disclaimer {
+     padding-top: 10px;
+     line-height:15px;
+     font-size: 12px;
+     color: var(--dark-bluegreen-txt);
+}
+footer li a {
+     font-size:.9rem;
+     color: #92cccd;
+     padding: 0 1rem;
+     text-decoration: none;
+}
+@media (min-width: 640px) {
+     header {
+          flex-direction:row;
+     }
+     main {
+          width:90%;
+     }
+     nav {
+          padding-right:6%;
+          display:inline-block;
+     } 
+     .side{ 
+          width:4em;
+          justify-content: flex-end;
+     }
+     .content{
+          border-left: .3rem var(--darkblue-bg) solid;
+          border-top: none;
+          padding:2% 2% 2% 4%;
+     }
+     #about-me,#work,#contact-me {
+          display:flex;
+          flex-direction: row;
+          flex-wrap:wrap;
+          justify-content: space-between;
+          align-content: start;
+          padding: 0.5%;
+     }
+     #work .content {
+          flex:9;
+          display:flex;
+          flex-direction: row;
+          flex-wrap:wrap;
+          background: #f4f4f4;
+          padding:2% 2% 2% 4%;
+          border-top: none;
+          border-left: .3rem var(--darkblue-bg) solid;
+          line-height: 1.4;
+     }
+     .project {
+          width:48%;
+     }
+     #contact-me a, #contact-me a:visited {
+          display:inline-block;
+     }
+}
