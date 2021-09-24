@@ -2,10 +2,11 @@ import React from "react";
 import ContactForm from './ContactForm';
 
 function Contact() {
+     
      return (
           <section id="contact-me">
                <div className="side">
-                    <h2>Contact Me</h2>
+                    <h2>Let's Talk</h2>
                </div>
                <div className="content">
                     <a href="tel:469-233-1354" aria-label="telephone"rel="noreferrer">469.233.1354</a>

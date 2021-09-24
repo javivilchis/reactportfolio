@@ -8,11 +8,13 @@ import Contact from "./components/Contact";
 import NavBar from "./NavBar";
 import Hero from "./Hero";
 import Footer from "./Footer";
-import {
-  Switch,
-  Route
-} from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
+import ReactGA from 'react-ga';
+
+const trackingId = "G-ECYMCZPMG0"; // Replace with your Google Analytics tracking ID
+ReactGA.initialize(trackingId);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   return (

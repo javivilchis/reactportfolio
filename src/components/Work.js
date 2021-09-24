@@ -1,5 +1,5 @@
 import React from "react";
-
+import { StyledReport } from "./styles/Work.styled";
 
 function Work() {
      return (
@@ -8,7 +8,10 @@ function Work() {
                     <h2>Work</h2>
                </div>
                <div className="content">
-                    <a href="https://www.ambitsuccess.com" className="project report" target="_blank" rel="noreferrer">
+                    <StyledReport>
+                       
+                   
+                    <a href="https://www.ambitsuccess.com" className="project {report}" target="_blank" rel="noreferrer">
                          <div className="overlay"></div>
                          <div className="project-title">
                               <h2>AMBITSUCCESS</h2>
@@ -17,6 +20,7 @@ function Work() {
                               PHP/JS/SQL/BSTRP/REST/EE
                          </div>
                     </a>
+                    </StyledReport>
                     <a href="https://google.com" className="project wall" target="_blank" rel="noreferrer">
                          <div className="overlay"></div>
                          <div className="project-title">

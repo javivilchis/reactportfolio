@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
+
 const formStyles = {
-     contactForm: {
+     
           input: {
 
                width: '100%',
@@ -10,7 +11,7 @@ const formStyles = {
                boxSizing: 'border-box',
 
           }
-     }
+    
 
 }
 const ContactForm = () => {
@@ -36,10 +37,10 @@ const ContactForm = () => {
           alert(result.status);
      };
      return (
-          <form onSubmit={handleSubmit} className={formStyles.contactForm}>
+          <form onSubmit={handleSubmit} >
                <div>
                     <label htmlFor="name">Name:
-                         <input type="text" id="name" required />
+                         <input className={formStyles.input}type="text" id="name" required />
                     </label>
                </div>
                <div>
