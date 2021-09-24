@@ -11,11 +11,11 @@ function Footer() {
                     <li><Link to="/work">Work</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                     <li><a href="https://docs.google.com/document/d/1y4rS7eobPAoHeWPz6Byz0kd80kgRzqsIlaQoATi9Fqo/edit?usp=sharing"
-                         target="_blank" aria-label="resume">Resume</a></li>
-                    <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                         target="_blank" aria-label="resume" rel="noreferrer">Resume</a></li>
+                    <li><a href="/privacy-policy.html" rel="noreferrer">Privacy Policy</a></li>
 
                     <li>
-                         <div class="disclaimer">
+                         <div className="disclaimer">
                               <p>
                                    Disclaimer:
                                    The information provided by javier vilchis on javivilchis.com and similar websites as well as on mobile applications is for general infomational purposes only. Information in websites and mobile

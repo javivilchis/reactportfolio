@@ -5,7 +5,7 @@ import './styles/main.css';
 function NavBar() {
      return (
           <header id="home">
-               <h1 class="logo">Javier Vilchis</h1>
+               <h1 className="logo">Javier Vilchis</h1>
                <nav>
 
                     <ul>

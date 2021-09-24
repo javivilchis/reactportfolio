@@ -9,10 +9,8 @@ import NavBar from "./NavBar";
 import Hero from "./Hero";
 import Footer from "./Footer";
 import {
-  BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 

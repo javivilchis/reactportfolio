@@ -1,13 +1,14 @@
 import React from "react";
-import './styles/main.css';
+import "./styles/main.css";
+import { StyledHero } from "./components/styles/hero.styled";
 
-function Hero() {
-     return (
-          <hero>
-               <div class="blue-overlay"></div>
-               <h1>- Marketing Strategy <br />- Customer Experience <br />- Web Development</h1>
-          </hero>
-     );
+export default function Hero() {
+  return (
+    <StyledHero>
+      <div className="blue-overlay"></div>
+      <h1>
+        - Marketing Strategy <br />- Customer Experience <br />- Web Development
+      </h1>
+    </StyledHero>
+  );
 }
-
-export default Hero;
