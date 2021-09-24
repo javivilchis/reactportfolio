@@ -19,13 +19,13 @@ html {
 /* start of the main styles */
 html {
      scroll-behavior: smooth;
-     background-color: var(--main-txt-color);
+     background-color: var(--header-bg);
 }
 body {
      font-size:1rem;
      color: var(--main-txt-color);
      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     background: var(--light-bg);
+     background: var(--header-bg);
 }
 p {
      margin-bottom: 14px;
@@ -65,7 +65,7 @@ nav a {
      text-decoration: none;
 }
 /* hero */
-hero .blue-overlay {
+/* hero .blue-overlay {
      position:absolute;
      top:0;
      background: var(--darkblue-bg);
@@ -80,7 +80,7 @@ hero {
      position:relative;
      padding: 2rem 0;
      background-color:  var(--darkblue-bg);
-     background: url(/images/header-image.png) repeat-x;
+     background: url("./images/header-image.png") repeat-x;
      display:flex;
      flex-direction: row;
      justify-content: flex-end;
@@ -96,7 +96,7 @@ hero h1{
      font-size:2rem;
      z-index:3;
      
-}
+} */
 /* main */
 main {
      width:95%;
@@ -108,7 +108,7 @@ main {
      flex-direction: column;
      flex-wrap:wrap;
      justify-content: space-between;
-     align-content: start;
+     align-content: flex-start;
      padding: 0.5%;
 }
 .side{ 
@@ -165,13 +165,13 @@ main {
      margin-bottom:1em;
      z-index:5;
 }
-/* project backgrounds */
-.report { background: url("/images/ambitsuccess-website.png") no-repeat; background-size: cover;}
-.wall { background: url("/images/ambitcares-website.png") no-repeat; background-size: cover;}
-.calculator { background: url("/images/note-taker-heroku.png") no-repeat; background-size: cover;}
-.puzzle { background: url("/images/puzzle.png") no-repeat; background-size: cover;}
-.buddy { background: url("/images/poppies.jpeg") no-repeat; background-size: cover;}
-
+/* project backgrounds 
+.report { background: url("./images/ambitsuccess-website.png") no-repeat; background-size: cover;}
+.wall { background: url("./images/ambitcares-website.png") no-repeat; background-size: cover;}
+.calculator { background: url("./images/note-taker-heroku.png") no-repeat; background-size: cover;}
+.puzzle { background: url("./images/puzzle.png") no-repeat; background-size: cover;}
+.buddy { background: url("./images/poppies.jpeg") no-repeat; background-size: cover;}
+*/
 .overlay{
      position:absolute; 
      width:100%; 
@@ -264,7 +264,7 @@ footer li a {
           flex-direction: row;
           flex-wrap:wrap;
           justify-content: space-between;
-          align-content: start;
+          align-content: flex-start;
           padding: 0.5%;
      }
      #work .content {
