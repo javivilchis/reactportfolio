@@ -12,7 +12,7 @@ import { Switch, Route } from "react-router-dom";
 
 import ReactGA from 'react-ga';
 
-const trackingId = "G-ECYMCZPMG0"; // Replace with your Google Analytics tracking ID
+const trackingId = "G-ECYMCZPMG0"; 
 ReactGA.initialize(trackingId);
 ReactGA.pageview(window.location.pathname + window.location.search);
 
