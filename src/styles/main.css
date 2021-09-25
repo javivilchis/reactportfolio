@@ -61,6 +61,7 @@ html {
   --footer-bg: #31343d;
   --light-bg: #f4f4f4;
   --dark-bluegreen-txt: #268788;
+  --navlinks: #61dafb;
 }
 
 ::selection {
@@ -79,6 +80,9 @@ body {
     "Lucida Sans", Arial, sans-serif;
   background: var(--header-bg);
 }
+a {
+  color: var(--navlinks);
+}
 p {
   margin-bottom: 14px;
 }
@@ -92,9 +96,16 @@ header {
   flex-direction: column;
 }
 .logo {
+  color: var(--darkblue-bg);
   font-size: 1.5rem;
   padding: 0.5rem 0.5rem 0.5rem 3rem;
   background: var(--bluegreen-bg);
+  text-decoration: none;
+}
+.logo a,
+.logo a:, .logo a:visted,
+.logo:link {
+  text-decoration: none !important;
 }
 nav {
   padding-right: 6%;
@@ -109,48 +120,21 @@ nav li {
 }
 nav a {
   font-size: 1.2rem;
-  color: #92cccd;
+  color: var(--bluegreen-txt);
   border-bottom: 4px var(--bluegreen-bg) solid;
   padding: 0 1rem;
   text-decoration: none;
 }
-/* hero */
-/* hero .blue-overlay {
-     position:absolute;
-     top:0;
-     background: var(--darkblue-bg);
-     
-     width:100%;
-     height:100%;
-     opacity:.5;
-     z-index: 2;
 
-}
-hero { 
-     position:relative;
-     padding: 2rem 0;
-     background-color:  var(--darkblue-bg);
-     background: url("./images/header-image.png") repeat-x;
-     display:flex;
-     flex-direction: row;
-     justify-content: flex-end;
-     align-items: flex-end;
-     min-height: 200px;
-     z-index: 1;
-}
-hero h1{ 
-     color:var(--main-txt-color);
-     background-color: var(--bluegreen-bg);
-     width:relative;
-     padding: 10px 100px 10px 10px;
-     font-size:2rem;
-     z-index:3;
-     
-} */
 /* main */
 main {
   width: 95%;
   margin: 0 auto;
+}
+.home {
+  background-image: url("./../images/brainstorming.jpeg");
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 /* about me section */
 #about-me,
@@ -220,13 +204,7 @@ main {
   margin-bottom: 1em;
   z-index: 5;
 }
-/* project backgrounds 
-.report { background: url("./images/ambitsuccess-website.png") no-repeat; background-size: cover;}
-.wall { background: url("./images/ambitcares-website.png") no-repeat; background-size: cover;}
-.calculator { background: url("./images/note-taker-heroku.png") no-repeat; background-size: cover;}
-.puzzle { background: url("./images/puzzle.png") no-repeat; background-size: cover;}
-.buddy { background: url("./images/poppies.jpeg") no-repeat; background-size: cover;}
-*/
+
 .overlay {
   position: absolute;
   width: 100%;
@@ -251,6 +229,23 @@ main {
   min-height: 9em;
 }
 /* Contact Me */
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.left,
+.right {
+  width: 50%;
+  padding: 3% 3% 3% 5%;
+  justify-content: flex-start;
+}
+.left {
+  flex: 1;
+  width: 100%;
+  border-left: 1px #268788 solid;
+  background-color: #acd4d5;
+}
 #contact-me {
   display: flex;
   flex-direction: row;
@@ -267,7 +262,37 @@ main {
   align-self: center;
   display: flex;
 }
+#contact-me .content {
+  text-align: left;
+}
 
+form input[type="text"],
+form input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #f4f4f4;
+  box-shadow: 0 0 8px #268788;
+}
+form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+}
 /* footer */
 footer {
   background: var(--footer-bg);
@@ -286,6 +311,7 @@ footer .disclaimer {
   line-height: 15px;
   font-size: 12px;
   color: var(--dark-bluegreen-txt);
+  text-align: left;
 }
 footer li a {
   font-size: 0.9rem;

@@ -1,19 +1,5 @@
 import React, { useState } from "react";
 
-
-const formStyles = {
-     
-          input: {
-
-               width: '100%',
-               padding: '12px 20px',
-               margin: '8px 0',
-               boxSizing: 'border-box',
-
-          }
-    
-
-}
 const ContactForm = () => {
      const [status, setStatus] = useState("Submit");
      const handleSubmit = async (e) => {
@@ -37,10 +23,10 @@ const ContactForm = () => {
           alert(result.status);
      };
      return (
-          <form onSubmit={handleSubmit} >
+          <form onSubmit={handleSubmit}>
                <div>
                     <label htmlFor="name">Name:
-                         <input className={formStyles.input}type="text" id="name" required />
+                         <input type="text" id="name" required />
                     </label>
                </div>
                <div>

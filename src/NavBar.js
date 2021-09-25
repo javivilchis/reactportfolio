@@ -6,7 +6,7 @@ import './styles/main.css';
 function NavBar() {
      return (
           <header id="home">
-               <h1 className="logo">Javier Vilchis</h1>
+               <Link to="/reactportfolio/"><h1 className="logo">Javier Vilchis</h1></Link>
                <nav>
 
                     <ul>

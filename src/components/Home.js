@@ -1,20 +1,20 @@
 import React from "react";
-import logo from '../logo.svg';
+import javi from "./../images/javier_vilchis_duo_purple.png";
 function Home() {
      return (
-          <header className="App-header">
-               <img src={logo} className="App-logo" alt="logo" />
-               <p>
-                    Edit <code>src/App.js</code> and save to reload.
+          <header className="App-header home">
+               <img src={javi}  className="javi" alt="Javier Vilchis" />
+               <p className="introduction">
+                   Welcome to Javier Vilchis Portfolio, please take a moment to brows around this website. If you happen to see anything that interests you within this site, please
+                   contact Javier from any of the available channels in <a className="App-link" href="/reactportfolio/contact" aria-label="contact me">here</a>.
                </p>
 
                <a
                     className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
+                    href="/reactportfolio/work"
                     rel="noopener noreferrer"
                >
-                    Learn React
+                    visit work area
                </a>
           </header>
      );
