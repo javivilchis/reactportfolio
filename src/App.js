@@ -22,10 +22,10 @@ function App() {
       <NavBar />
       <Hero />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/work" component={Work} />
-        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/reactportfolio/" component={Home} />
+        <Route exact path="/reactportfolio/about" component={About} />
+        <Route exact path="/reactportfolio/work" component={Work} />
+        <Route exact path="/reactportfolio/contact" component={Contact} />
       </Switch>
       <Footer />
     </div>
