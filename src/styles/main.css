@@ -103,7 +103,8 @@ header {
   text-decoration: none;
 }
 .logo a,
-.logo a:, .logo a:visted,
+.logo a:link,
+.logo a:visted,
 .logo:link {
   text-decoration: none !important;
 }
