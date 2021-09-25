@@ -6,10 +6,10 @@ function Footer() {
      return (
           <footer>
                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/work">Work</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/reactportfolio/">Home</Link></li>
+                    <li><Link to="/reactportfolio/about">About</Link></li>
+                    <li><Link to="/reactportfolio/work">Work</Link></li>
+                    <li><Link to="/reactportfolio/contact">Contact</Link></li>
                     <li><a href="https://docs.google.com/document/d/1y4rS7eobPAoHeWPz6Byz0kd80kgRzqsIlaQoATi9Fqo/edit?usp=sharing"
                          target="_blank" aria-label="resume" rel="noreferrer">Resume</a></li>
                     <li><a href="/privacy-policy.html" rel="noreferrer">Privacy Policy</a></li>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-     .App {
+  .App {
      text-align: center;
    }
    
