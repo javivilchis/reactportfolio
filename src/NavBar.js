@@ -2,11 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 //import {useHistory} from "react-router"
 import './styles/main.css';
-
+const styles = {
+     a: {
+          TextDecoration: "none"
+     }
+}
 function NavBar() {
      return (
           <header id="home">
-               <Link to="/reactportfolio/"><h1 className="logo">Javier Vilchis</h1></Link>
+               <Link to="/" style={styles.a}><h1 className="logo" >Javier Vilchis</h1></Link>
                <nav>
 
                     <ul>
