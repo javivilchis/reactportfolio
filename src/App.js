@@ -12,7 +12,7 @@ import { Switch, Route } from "react-router-dom";
 import ReactGA from 'react-ga';
 /* importing firebase */
 import firebase from 'firebase/compat/app';
-
+import './i18n';
 
 firebase.initializeApp({
   apiKey: process.env.FIREBASE_KEY,
