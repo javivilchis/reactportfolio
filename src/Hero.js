@@ -7,7 +7,7 @@ export default function Hero() {
     <StyledHero>
       <div className="blue-overlay"></div>
       <h1>
-        - Marketing Strategy <br />- Customer Experience <br />- Web Development
+        - Marketing Strategy <br />- Customer Experience<br />- UX / UI Design <br />- Web Development
       </h1>
     </StyledHero>
   );
