@@ -5,7 +5,7 @@ function Home() {
           <header className="App-header home">
                <img src={javi}  className="javi" alt="Javier Vilchis" />
                <p className="introduction">
-                   Welcome to Javier Vilchis Portfolio, please take a moment to brows around this website. If you happen to see anything that interests you within this site, please
+                   Welcome to Javier Vilchis Portfolio, please take a moment to browse around this website. If you happen to see anything that interests you within this site, please
                    contact Javier from any of the available channels in <a className="App-link" href="/reactportfolio/contact" aria-label="contact me">here</a>.
                </p>
 

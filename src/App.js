@@ -15,7 +15,7 @@ import firebase from 'firebase/compat/app';
 
 
 firebase.initializeApp({
-  apiKey: "AIzaSyCcfWq3jlxxrSoadsHSCwb3zKZfMNhgkAs",
+  apiKey: process.env.FIREBASE_KEY,
   authDomain: "jv-website-42ff6.firebaseapp.com",
   databaseURL: "https://jv-website-42ff6.firebaseio.com",
   projectId: "jv-website-42ff6",
@@ -26,10 +26,10 @@ firebase.initializeApp({
 });
 
 
-/* iimporting react Google Analytics */
+/* importing react Google Analytics */
 
 
-const trackingId = "G-ECYMCZPMG0"; 
+const trackingId = "G-BJT6LTFH6Y"; 
 ReactGA.initialize(trackingId);
 ReactGA.pageview(window.location.pathname + window.location.search);
 
@@ -40,10 +40,10 @@ function App() {
       <NavBar />
       <Hero />
       <Switch>
-        <Route exact path="/reactportfolio/" component={Home} />
-        <Route exact path="/reactportfolio/about" component={About} />
-        <Route exact path="/reactportfolio/work" component={Work} />
-        <Route exact path="/reactportfolio/contact" component={Contact} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/work" component={Work} />
+        <Route exact path="/contact" component={Contact} />
       </Switch>
       <Footer />
     </div>
