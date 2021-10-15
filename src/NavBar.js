@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {useHistory} from "react-router"
+//import {useHistory} from "react-router"
 import './styles/main.css';
 
 function NavBar() {
