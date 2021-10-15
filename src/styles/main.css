@@ -129,7 +129,14 @@ nav a {
   padding: 0 1rem;
   text-decoration: none;
 }
-
+.language {
+  font-size: 1.2rem;
+  color: var(--bluegreen-txt);
+  border-bottom: 4px var(--bluegreen-bg) solid;
+  padding: 0 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
 /* main */
 main {
   width: 95%;
