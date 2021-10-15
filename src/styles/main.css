@@ -95,6 +95,9 @@ header {
   align-items: center;
   flex-direction: column;
 }
+#home a {
+  text-decoration: none;
+}
 .logo {
   color: var(--darkblue-bg);
   font-size: 1.5rem;
