@@ -45,7 +45,7 @@ RewriteRule ^ index.html [QSA,L]
 3. check your site and voila!
 
 ## Bug Fixes 
-20211115.1 updates to the backend service to keep track on the build number when deployed to production.
-20211109.4 updates to contact page for plugin in the contact service to send out emails to me.
-20211104.3 troubleshoot the router issue when the pages were reloaded in a PHP server it would give back a 404 error.
-20211101.1 released website to production.
+20211115.1 updates to the backend service to keep track on the build number when deployed to production.<br>
+20211109.4 updates to contact page for plugin in the contact service to send out emails to me.<br>
+20211104.3 troubleshoot the router issue when the pages were reloaded in a PHP server it would give back a 404 error.<br>
+20211101.1 released website to production.<br>
