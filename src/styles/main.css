@@ -215,7 +215,12 @@ main {
   margin-bottom: 1em;
   z-index: 5;
 }
-
+.hide {
+  display:none;
+}
+.show {
+  display:block;
+}
 .overlay {
   position: absolute;
   width: 100%;
@@ -247,7 +252,7 @@ main {
 }
 .left,
 .right {
-  width: 50%;
+  width: 100%;
   padding: 3% 3% 3% 5%;
   justify-content: flex-start;
 }
@@ -293,6 +298,8 @@ textarea {
   border-radius: 4px;
   resize: none;
 }
+.hide-sm{display:none;}
+label{ width:100%; }
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
@@ -378,4 +385,13 @@ footer li a {
   #contact-me a:visited {
     display: inline-block;
   }
+}
+@media (min-width:480px){
+  .left,
+.right {
+  width: 50%;
+  padding: 3% 3% 3% 5%;
+  justify-content: flex-start;
+} 
+.hide-sm{display:block;}
 }

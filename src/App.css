@@ -1,6 +1,9 @@
 .App {
   text-align: left;
 }
+.version {
+  color: #ffffff;
+}
 .javi {
   padding-top: 20px;
   width: 12%;

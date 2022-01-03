@@ -11,7 +11,7 @@ const styles = {
 
 function NavBar() {
      const { t, i18n } = useTranslation();
-     const changeLanguage = (lng) => {    i18n.changeLanguage(lng);  }
+     const changeLanguage = (lng) => { i18n.changeLanguage(lng); }
      console.log("CURRENT LANGUAGE: ", i18n.resolvedLanguage);
      return (
           <header id="home">
@@ -19,20 +19,11 @@ function NavBar() {
                <nav>
 
                     <ul>
-                         <li><Link to="/">{t('link.home')}</Link></li>
+                         <li className="hide-sm"><Link to="/">{t('link.home')}</Link></li>
                          <li><Link to="/about">{t('link.about')}</Link></li>
                          <li><Link to="/work">{t('link.work')}</Link></li>
                          <li><Link to="/contact">{t('link.contact')}</Link></li>
                          <li>{i18n.resolvedLanguage === 'en' ? <span className="language" onClick={() => changeLanguage('es')}>ES</span> : <span className="language" onClick={() => changeLanguage('en')}>EN</span>}</li>
-                         
-          {/* {Object.keys(lngs).map((lng) => (
-            <span key={lng}  style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal', fontColor: 'white' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-             
-              { i18n.resolvedLanguage[0]  === 'en' ? <span>English</span> : <span>Spanish</span>}
-            </span>
-          ))}
-      
-        </li> */}
                     </ul>
                </nav>
           </header>
