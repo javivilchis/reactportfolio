@@ -1,4 +1,5 @@
 import React from "react";
+import metadata from "./metadata.json";
 import './styles/main.css';
 import { Link } from "react-router-dom";
 import logo from './logo.svg';
@@ -11,7 +12,7 @@ function Footer() {
      };
      const { t } = useTranslation();
      return (
-          
+
           <footer>
                <ul>
                     <li><Link to="/">{t('link.home')}</Link></li>
@@ -28,6 +29,7 @@ function Footer() {
                               <p>{t('footer.disclaimer')}</p>
                          </div>
                     </li>
+                    <li className="version"><em>{`Version ${metadata.buildMajor}.${metadata.buildMinor}.${metadata.buildRevision}`}</em></li>
                </ul>
 
           </footer>
