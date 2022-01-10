@@ -1,7 +1,7 @@
 # Javier Vilchis React Js Portfolio
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and modified to use Javier Vilchis portfolio from .
-Take a look at the live portfolio at [www.javivilchis.com](www.javivilchis.com).
+Take a look at the live portfolio at [https://www.javivilchis.com](www.javivilchis.com).
 
 ## Table Of Contents
 
