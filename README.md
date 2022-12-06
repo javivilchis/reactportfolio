@@ -23,6 +23,9 @@ This project is to show the creation of a website by utilizing react cli.
 This project is dependent on React Js.
 This project utilizes Router and Styled Components
 
+This project uses Toast to show the web messages. You can install toastify using ``` npm install react-toastify ``` <br>
+https://fkhadra.github.io/react-toastify/introduction 
+
 ## How to contribute
 
 You can download a copy of this repository and upload suggestions within a branch name it "contribution upload version 1".
@@ -49,3 +52,4 @@ RewriteRule ^ index.html [QSA,L]
 20211109.4 updates to contact page for plugin in the contact service to send out emails to me.<br>
 20211104.3 troubleshoot the router issue when the pages were reloaded in a PHP server it would give back a 404 error.<br>
 20211101.1 released website to production.<br>
+20210304.1 add news section to the bottom of the page<br>

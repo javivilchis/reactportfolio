@@ -12,7 +12,7 @@ const styles = {
 function NavBar() {
      const { t, i18n } = useTranslation();
      const changeLanguage = (lng) => { i18n.changeLanguage(lng); }
-     console.log("CURRENT LANGUAGE: ", i18n.resolvedLanguage);
+     //console.log("CURRENT LANGUAGE: ", i18n.resolvedLanguage);
      return (
           <header id="home">
                <Link to="/" style={styles.a}><h1 className="logo" >Javier Vilchis</h1></Link>

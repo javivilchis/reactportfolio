@@ -6,7 +6,7 @@ position:relative;
 padding: 2rem 0;
 background-color:  var(--darkblue-bg);
 background-image: url(${header});
-display:flex;
+display:none;
 flex-direction: row;
 justify-content: flex-end;
 align-items: flex-end;
@@ -43,5 +43,7 @@ h1{
      z-index:3;
      
 }
-
+@media(min-width: 640px){
+     display:flex;
+}
 `;

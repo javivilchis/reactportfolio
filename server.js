@@ -21,6 +21,8 @@ const contactEmail = nodemailer.createTransport({
      port: 465,
      secure: false, // upgrade later with STARTTLS
      auth: {
+          user: process.env.user,
+          pass: process.env.pass,
           //user: "javi2021@javivilchis.com",// add these inside the .env as a variable
           //pass: "5*4Ae$_H){&@",// add these inside the .env as a variable
      },
