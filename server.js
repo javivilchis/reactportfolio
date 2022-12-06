@@ -9,13 +9,7 @@ app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
 
-// const contactEmail = nodemailer.createTransport({
-//      service: 'gmail',
-//      auth: {
-//           user: "javivilchis@gmail.com",
-//           pass: "xxxxxxx",
-//      },
-// });
+
 const contactEmail = nodemailer.createTransport({
      host: "javivilchis.com",
      port: 465,
@@ -23,8 +17,6 @@ const contactEmail = nodemailer.createTransport({
      auth: {
           user: process.env.user,
           pass: process.env.pass,
-          //user: "javi2021@javivilchis.com",// add these inside the .env as a variable
-          //pass: "5*4Ae$_H){&@",// add these inside the .env as a variable
      },
 });
 
