@@ -2,31 +2,162 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/android-chrome-192x192.png" />
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!-- PUBLIC URL:  %PUBLIC_URL% -->
-  <title>Javier Vilchis | Web Developer / UI & UX Expert</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJT6LTFH6Y"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-BJT6LTFH6Y');
-  </script>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Javier Vilchis | Web Developer / UI & UX Expert</title>
+     <meta
+          description="Javier Vilchis is a web developer based in Irving, Texas. Take a look at his work and call him today to talk about your next project.">
+     <!-- Favicon -->
+     <link rel="apple-touch-icon" sizes="60x60" href="./apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+     <link rel="manifest" href="./site.webmanifest">
+     <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+     <meta name="msapplication-TileColor" content="#da532c">
+     <meta name="theme-color" content="#ffffff">
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <!-- Style Sheet -->
+     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="app"></div>
+     <header id="home">
+          <h1 class="logo">Javier Vilchis</h1>
+          <nav>
+               <ul>
+                    <li><a href="#home" aria-label="Home">Home</a></li>
+                    <li><a href="#about-me" aria-label="about me">About</a></li>
+                    <li><a href="#work" aria-label="about me">Work</a></li>
+                    <li><a href="https://docs.google.com/document/d/1y4rS7eobPAoHeWPz6Byz0kd80kgRzqsIlaQoATi9Fqo/edit?usp=sharing"
+                              target="_blank" aria-label="resume">Resume</a></li>
+                    <li><a href="#contact-me" aria-label="contact-me">Contact</a></li>
+               </ul>
+          </nav>
+     </header>
+     <hero>
+          <div class="blue-overlay"></div>
+          <h1>- Marketing Strategy <br>- Customer Experience <br>- Web Development</h1>
+     </hero>
+     <main>
+          <section id="about-me">
+               <div class="side">
+                    <h2>About Me</h2>
+               </div>
+               <div class="content">
+                    <p>Javier Vilchis is a Web Developer and a Multimedia Designer with focus on User Experience on a
+                         Marketing Level. He has the ability to strategize your idea into a full marketing campaing to
+                         get your business running at it's best!. He is in the process of acquiring his Certified ANA
+                         Marketing Professional (CAMP) certification, to serve your campaing and strategy needs with
+                         customer-centric techniques.</p>
+
+                    <p>Javier is also updating his knowledge base with JavaScript and other front-end
+                         languages to better serve current and future projects. His professional programming stack
+                         includes front-end scripting and backend scripting to support small and large projects.</p>
+               </div>
+          </section>
+
+          <section id="work">
+               <div class="side">
+                    <h2>Work</h2>
+               </div>
+               <div class="content">
+                    <a href="https://www.ambitsuccess.com" class="project report" target="_blank">
+                         <div class="overlay"></div>
+                         <div class="project-title">
+                              <h2>AMBITSUCCESS</h2>
+                              Full Site to showcase the best network marketers from Texas and Northwest North East
+                              market.<br>
+                              PHP/JS/SQL/BSTRP/REST/EE
+                         </div>
+                    </a>
+                    <a href="https://google.com" class="project wall" target="_blank">
+                         <div class="overlay"></div>
+                         <div class="project-title">
+                              <h2>AMBIT CARES</h2>
+                              Full Site to collect donations in support for NTFB.<br>
+                              PHP/JS/HTML/REST
+                         </div>
+                    </a>
+                    <a href="https://jvnotetaker.herokuapp.com/notes" class="project calculator" target="_blank">
+                         <div class="overlay"></div>
+                         <div class="project-title">
+                              <h2>NOTE TAKER</h2>
+                              Note taker done to create notes on the fly.<br>
+                              NODE JS/HTML/CSS/HEROKU
+                         </div>
+                    </a>
+                    <a href="https://google.com" class="project puzzle" target="_blank">
+                         <div class="overlay"></div>
+                         <div class="project-title">
+                              <h2>Pastel Puzzles</h2>
+                              MERN Stack
+                         </div>
+                    </a>
+                    <a href="https://google.com" class="project buddy" target="_blank">
+                         <div class="overlay"></div>
+                         <div class="project-title">
+                              <h2>Run Buddy</h2>
+                              HTML/CSS
+                         </div>
+                    </a>
+               </div>
+          </section>
+
+          <section id="contact-me">
+               <div class="side">
+                    <h2>Contact Me</h2>
+               </div>
+               <div class="content">
+                    <a href="tel:469-233-1354" aria-label="telephone">469.233.1354</a>
+                    <a href="mailto:info@javivilchis.com?subject=from%20github%20email"
+                         aria-label="email">info@javivilchis.com</a>
+                    <a href="https://twitter.com/javivilchis" target="_blank" aria-label="twitter">@javivilchis</a>
+                    <a href="https://instagram.com/javivilchis1234" target="_blank"
+                         aria-label="instagram">@javivilchis1234</a>
+                    <a href="https://www.linkedin.com/in/javier-vilchis-8843226/" target="_blank"
+                         aria-label="linkedIn"><i class="fab fa-linkedin"></i></a>
+               </div>
+          </section>
+
+     </main>
+     <footer>
+          <ul>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#about-me">About</a></li>
+               <li><a href="#work" aria-label="about me">Work</a></li>
+               <li><a href="#contact-me">Contact</a></li>
+               <li><a href="https://docs.google.com/document/d/1y4rS7eobPAoHeWPz6Byz0kd80kgRzqsIlaQoATi9Fqo/edit?usp=sharing"
+                         target="_blank" aria-label="resume">Resume</a></li>
+               <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+               <li>
+                    <div class="disclaimer">
+                         <p>
+                              Disclaimer:
+                              The information provided by javier vilchis on javivilchis.com and similar websites as well
+                              as on
+                              mobile
+                              applications is for general infomational purposes only. Information in websites and mobile
+                              apps are
+                              provided in good faith, however we make no representation or warranty of any kind, express
+                              or
+                              implied,
+                              regarding the accuracy, adequacy, reliability, availability or completenence of any
+                              information on
+                              the
+                              site or our mobile application. THE CONTENT PRESENTED HERE DOES NOT SHARE ANY POINTS OF
+                              VIEW OR
+                              REPRESENTS POINT OF SALE TRANSACTIONS. THIS WEBSITE AND APP REPRESENTS POINTS OF VIEW AND
+                              IS DOES
+                              NOT
+                              REPRESENT ANY OF THE BRANDS PRESENTED OR SHOWN IN THIS WEBSITE.
+                         </p>
+                    </div>
+               </li>
+          </ul>
+
+     </footer>
 </body>
 
 </html>
