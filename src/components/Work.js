@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledReport, StyledWall, StyledCalculator, StyledPuzzle, StyledBuddy } from "./styles/Work.styled";
+import { StyledEvent, StyledReport, StyledWall, StyledCalculator, StyledPuzzle, StyledBuddy } from "./styles/Work.styled";
 
 function Work() {
      return (
@@ -9,6 +9,16 @@ function Work() {
                     <h2>Work</h2>
                </div>
                <div className="content">
+                    <StyledReport className="project">
+                         <div className="overlay"></div>
+                         <a href="https://events.ambitenergy.com.com" className="{event} " target="_blank" rel="noopener noreferrer">
+                              <div className="project-title">
+                                   <h2>EVENTS CENTER</h2>
+                                   Layout reworked to incorporate a better way to present many events without leaving any important element.<br />
+                                   PHP/JS/SQL/BSTRP/EE
+                              </div>
+                         </a>
+                    </StyledReport>
                     <StyledReport className="project">
                          <div className="overlay"></div>
                          <a href="https://www.ambitsuccess.com" className="{report} " target="_blank" rel="noopener noreferrer">
