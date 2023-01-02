@@ -72,6 +72,11 @@ i18n
               title: 'Inevitable Injury',
               about: 'Yes, some injuries are inevitable and my time has come to take the time to heal, it was caused by many factors and here they are.',
               link: 'read more'
+            },
+            eight: {
+              title: 'Happy New Year 2023',
+              about: 'Thank you for beign by my side all through out 2022! May you have a glorious year full of accomplishments and happy thoughts in the lows and the highs!! Let\'s do epic stuff!',
+              link: 'More to come'
             }
 
           },
@@ -141,6 +146,11 @@ i18n
               title: 'Lesión inevitable',
               about: 'Sí, algunas lesiones son inevitables y ha llegado mi momento de tomarme el tiempo para sanar, fue causado por muchos factores y aquí están.',
               link: 'leer más'
+            },
+            eight: {
+              title: 'Feliz año nuevo 2023',
+              about: '¡Gracias por estar a mi lado durante todo el 2022! ¡Que tengas un año glorioso lleno de logros y pensamientos felices en los altibajos! ¡Hagamos cosas épicas!',
+              link: 'Más por venir'
             }
 
           },

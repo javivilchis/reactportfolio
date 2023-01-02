@@ -38,6 +38,22 @@ function Home() {
                     <div className="w33"> 
                          <Card>
                               <Card.Body>
+                                   <Card.Title><h3>{t('news.eight.title')}</h3></Card.Title>
+                                   <Card.Text>
+                                        <small><em>01/02/2023</em></small>
+                                        <p>{t('news.eight.about')} </p>
+                                        
+                                   </Card.Text>
+                              </Card.Body>
+                              <Card.Footer className="footerJav">
+                                   <a href="/" aria-label="blog post happy new year 2023" title="happy new year 2023">{t('news.eight.link')}</a>
+                              </Card.Footer>
+                         </Card>
+                         
+                    </div>
+                    <div className="w33"> 
+                         <Card>
+                              <Card.Body>
                                    <Card.Title><h3>{t('news.seven.title')}</h3></Card.Title>
                                    <Card.Text>
                                         <small><em>08/15/2022</em></small>
@@ -82,23 +98,6 @@ function Home() {
                               </Card.Footer>
                          </Card>
                     </div>
-                    <div className="w33"> 
-                         <Card>
-                              <Card.Body>
-                                   <Card.Title><h3>{t('news.four.title')}</h3></Card.Title>
-                                   <Card.Text>
-                                        <small><em>04/02/2022</em></small>
-                                        <p>{t('news.four.about')}</p>
-                                        
-                                   </Card.Text>
-                              </Card.Body>
-                              <Card.Footer className="footerJav">
-                                   <a href="/irun/index.php/2022/03/01/cowtown-marathon-2022-ultra-cowtown-cowtown-2022-winner-ultra-irving-irc-texas/">{t('news.four.link')}</a>
-                              </Card.Footer>
-                         </Card>
-                        
-                    </div>
-                   
                     
                    
                </section>
