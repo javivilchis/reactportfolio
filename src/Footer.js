@@ -19,9 +19,9 @@ function Footer() {
                     <li><Link to="/about">{t('link.about')}</Link></li>
                     <li><Link to="/work">{t('link.work')}</Link></li>
                     <li><Link to="/contact">{t('link.contact')}</Link></li>
-                    <li><a href="https://docs.google.com/document/d/1y4rS7eobPAoHeWPz6Byz0kd80kgRzqsIlaQoATi9Fqo/edit?usp=sharing"
-                         target="_blank" aria-label="resume" rel="noreferrer">{t('link.resume')}</a></li>
-                    <li><a href="/privacy-policy.html" rel="noreferrer">{t('link.privacy')}</a></li>
+                    <li><a rel="noopener noreferrer" href="https://docs.google.com/document/d/1OjbUH7w5kuK9svLJa0JIeNcQbp8Jt_HDnLYCcGjn2-M/edit?usp=sharing"
+                         target="_blank" aria-label="resume">{t('link.resume')}</a></li>
+                    <li><a href="/privacy-policy.html" rel="noopener noreferrer">{t('link.privacy')}</a></li>
                     <li style={colorStyles.footer}>{t('footer.build')} <img src={logo} className="App-logo" alt="logo" /></li>
 
                     <li>

@@ -1,22 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { send } from 'emailjs-com';
 
 function ContactForm() {
+     const form = useRef();
      const [toSend, setToSend] = useState({
           first_name: '',
           last_name: '',
           message: '',
           reply_to: '',
      });
-     const [Delivered, setDelivered] = useState({ delivered: '' });
+     const [Delivered, setDelivered] = useState("");
 
      const onSubmit = (e, delivered) => {
           console.log("ON SUBMIT")
           e.preventDefault();
           send(
-               'service_zhx4vt8',
+               'service_gareqk9',
                'template_zrzxq3q',
-               toSend,
+               form.current,
                'user_XlNRlRWDYj4t4GBqbqDSw'
           )
                .then((response) => {
@@ -31,41 +32,43 @@ function ContactForm() {
                     console.log('FAILED...', err);
                });
      };
+useEffect(() => {
 
+},[] )
      const handleChange = (e) => {
+          console.log(e.target.name)
+          console.log(e.target.value)
           setToSend({ ...toSend, [e.target.name]: e.target.value });
      };
      const showForm = (Delivered) => { console.log("your email was delivered"); }
-     SwitchCase(Delivered)
-     function SwitchCase(Delivered) {
+     
+
+     const SwitchCase = (Delivered) => {
           switch (Delivered) {
                case 'OK':
+                   return (<div className="thanks"><h2>Thank you for your email. Be sure to visit my different social media accounts and visit my blog @ www.javivilchis.com/irun/</h2></div>)
 
-                    <div className="thanks">
-                         <h2>Thank you for your email. Be sure to visit my different social media accounts and visit my blog @ www.javivilchis.com/irun/</h2>
-                    </div>
-
-                    break;
                case '':
-
-                    <div className="App">
+                    return ( <div className="App">
                          <div className="thanks hide">
                               <h2>Thank you for contacting us, we will be in touch as soon as possible</h2>
                          </div>
+                         <React.StrictMode>
                          <form onSubmit={onSubmit} name="contactform">
                               <input
                                    type='text'
                                    name='first_name'
                                    placeholder='First Name'
                                    value={toSend.first_name}
-                                   onChange={handleChange}
+                                  onChange={handleChange}
+                                  
                               />
                               <input
                                    type='text'
                                    name='last_name'
                                    placeholder='Last Name'
                                    value={toSend.last_name}
-                                   onChange={handleChange}
+                                  onChange={handleChange}
                               />
 
                               <textarea
@@ -73,33 +76,35 @@ function ContactForm() {
                                    name='message'
                                    placeholder='Your message'
                                    value={toSend.message}
-                                   onChange={handleChange}
+                                  onChange={handleChange}
                               />
                               <input
                                    type='text'
                                    name='reply_to'
                                    placeholder='Your email'
                                    value={toSend.reply_to}
-                                   onChange={handleChange}
+                                  onChange={handleChange}
                               />
                               <button type="submit">Submit</button>
                          </form>
+                         </React.StrictMode>
                     </div>
-
-                    break;
+                   
+)           
                case 'NULL':
-
-                    <div className="App">
+               return(<div className="App">
                          <div className="thanks hide">
                               <h2>Thank you for contacting us, we will be in touch as soon as possible</h2>
                          </div>
+                         <React.StrictMode>
                          <form onSubmit={onSubmit} name="contactform">
                               <input
                                    type='text'
                                    name='first_name'
                                    placeholder='First Name'
+                                   defaultValue=''
                                    value={toSend.first_name}
-                                   onChange={handleChange}
+                                   onChange={(e)=>handleChange(e.target.name)}
                               />
                               <input
                                    type='text'
@@ -125,15 +130,17 @@ function ContactForm() {
                               />
                               <button type="submit">Submit</button>
                          </form>
+                         </React.StrictMode>
                     </div>
-
-                    break;
+                    
+)              
                default:
-
+                    return (
                     <div className="App">
                          <div className="thanks hide">
                               <h2>Thank you for contacting us, we will be in touch as soon as possible</h2>
                          </div>
+                         <React.StrictMode>
                          <form onSubmit={onSubmit} name="contactform">
                               <input
                                    type='text'
@@ -166,109 +173,15 @@ function ContactForm() {
                               />
                               <button type="submit">Submit</button>
                          </form>
+                         </React.StrictMode>
                     </div>
 
-
+)
           }
      }
      return (
           <SwitchCase value="" />
      );
-     /*
-     switch (Delivered) {
-          case 'OK':
-               return (
-                    <div className="thanks">
-                         <h2>Thank you for your email. Be sure to visit my different social media accounts and visit my blog @ www.javivilchis.com/irun/</h2>
-                    </div>
-               );
-               break;
-          case '':
-               return (
-                    <div className="App">
-                         <div className="thanks hide">
-                              <h2>Thank you for contacting us, we will be in touch as soon as possible</h2>
-                         </div>
-                         <form onSubmit={onSubmit} name="contactform">
-                              <input
-                                   type='text'
-                                   name='first_name'
-                                   placeholder='First Name'
-                                   value={toSend.first_name}
-                                   onChange={handleChange}
-                              />
-                              <input
-                                   type='text'
-                                   name='last_name'
-                                   placeholder='Last Name'
-                                   value={toSend.last_name}
-                                   onChange={handleChange}
-                              />
-
-                              <textarea
-                                   type='text'
-                                   name='message'
-                                   placeholder='Your message'
-                                   value={toSend.message}
-                                   onChange={handleChange}
-                              />
-                              <input
-                                   type='text'
-                                   name='reply_to'
-                                   placeholder='Your email'
-                                   value={toSend.reply_to}
-                                   onChange={handleChange}
-                              />
-                              <button type="submit">Submit</button>
-                         </form>
-                    </div>
-               );
-               break;
-          default:
-               return (
-                    <div className="App">
-                         <div className="thanks hide">
-                              <h2>Thank you for contacting us, we will be in touch as soon as possible</h2>
-                         </div>
-                         <form onSubmit={onSubmit} name="contactform">
-                              <input
-                                   type='text'
-                                   name='first_name'
-                                   placeholder='First Name'
-                                   value={toSend.first_name}
-                                   onChange={handleChange}
-                              />
-                              <input
-                                   type='text'
-                                   name='last_name'
-                                   placeholder='Last Name'
-                                   value={toSend.last_name}
-                                   onChange={handleChange}
-                              />
-
-                              <textarea
-                                   type='text'
-                                   name='message'
-                                   placeholder='Your message'
-                                   value={toSend.message}
-                                   onChange={handleChange}
-                              />
-                              <input
-                                   type='text'
-                                   name='reply_to'
-                                   placeholder='Your email'
-                                   value={toSend.reply_to}
-                                   onChange={handleChange}
-                              />
-                              <button type="submit">Submit</button>
-                         </form>
-                    </div>
-               );
-
-     }
-     */
-
-
 }
 
 export default ContactForm

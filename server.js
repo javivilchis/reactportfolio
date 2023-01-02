@@ -9,21 +9,15 @@ app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
 
-// const contactEmail = nodemailer.createTransport({
-//      service: 'gmail',
-//      auth: {
-//           user: "javivilchis@gmail.com",
-//           pass: "xxxxxxx",
-//      },
-// });
+
 const contactEmail = nodemailer.createTransport({
      host: "javivilchis.com",
      port: 465,
      secure: false, // upgrade later with STARTTLS
      auth: {
-          //user: 
-          //pass:
-     }
+          user: process.env.user,
+          pass: process.env.pass,
+     },
 });
 
 contactEmail.verify((error) => {

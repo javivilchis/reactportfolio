@@ -1,4 +1,7 @@
-/* Reset */
+/* 
+  Reset 
+  src/styles/App.css v1 
+*/
 body,
 html {
   font-family: OpenSans, Helvetica, Arial, sans-serif;
@@ -62,6 +65,7 @@ html {
   --light-bg: #f4f4f4;
   --dark-bluegreen-txt: #268788;
   --navlinks: #61dafb;
+  --lightgray-bg: #bfcccf;
 }
 
 ::selection {
@@ -95,6 +99,14 @@ header {
   align-items: center;
   flex-direction: column;
 }
+main {
+  display: flex;
+  justify-content: space-between;
+  background: #f4f4f4;
+  padding: 1% 0;
+  align-items: center;
+  flex-direction: column;
+}
 #home a {
   text-decoration: none;
 }
@@ -111,24 +123,7 @@ header {
 .logo:link {
   text-decoration: none !important;
 }
-nav {
-  padding-right: 6%;
-}
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  min-width: 300px;
-}
-nav li {
-  padding: 0.5em;
-}
-nav a {
-  font-size: 1.2rem;
-  color: var(--bluegreen-txt);
-  border-bottom: 4px var(--bluegreen-bg) solid;
-  padding: 0 1rem;
-  text-decoration: none;
-}
+
 .language {
   font-size: 1.2rem;
   color: var(--bluegreen-txt);
@@ -139,13 +134,18 @@ nav a {
 }
 /* main */
 main {
-  width: 95%;
-  margin: 0 auto;
+  /* width: 95%;
+  margin: 0 auto; */
 }
 .home {
-  background-image: url("./../images/brainstorming.jpeg");
+  /* background-image: url("./../images/brainstorming.jpeg"); */
   background-size: cover;
   background-blend-mode: multiply;
+}
+#home a {
+  text-decoration: none;
+  width:100%;
+  margin-top:0;
 }
 /* about me section */
 #about-me,
@@ -337,13 +337,122 @@ footer li a {
   padding: 0 1rem;
   text-decoration: none;
 }
+
+#blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.border-top {
+  border-top: 14px solid #f30000 !important;
+}
+.card {
+  width:100%;
+  color: var(--main-txt-color);
+  background: transparent;
+  box-shadow: 0 0 8px #d6d6d6;
+  margin-bottom:10px;
+  min-height: 300px;
+ 
+}
+.card .footerJav { padding: 20px; text-align: center; text-decoration: none; background: var(--bluegreen-bg)}
+.card .footerJav a { text-decoration: none}
+.card .footerJav a:after { content: " → "}
+.card a, .card a:visited {
+  color: var(--main-txt-color);
+}
+.card a:hover {
+  color: var(--header-bg);
+  font-weight: bold;
+}
+.w50 {
+  width: 50%;
+  padding: 0 10px;
+}
+.w33 {
+  width:100%;
+  padding: 0 10px;
+  min-height: 250px;
+}
+.onebytwo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.introduction {
+  /* margin: auto 0; */
+  width: 100%;
+  font-size:20px;
+  line-height: 20px;
+  padding:20px;
+
+  background-color: var(--lightgray-bg);
+  position:relative;
+  margin-top: -50px;
+  padding-top: 43px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 320px ;
+  flex-direction: column;
+}
+nav {
+  padding-right: 6%;
+  width: 100%;
+}
+nav:last-child{
+  padding-right: 0;
+}
+
+nav li {
+  padding: 0.5em;
+}
+nav li a { width: 100%;}
+nav a {
+  font-size: 1.2rem;
+  color: var(--bluegreen-txt);
+  xborder-bottom: 4px var(--bluegreen-bg) solid;
+  padding: 0 1rem;
+  text-decoration: none;
+}
 @media (min-width: 640px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 200px;
+  }
+  nav {
+    padding-right: 6%;
+    width: auto;
+  }
+ 
+  .introduction {
+    /* margin: auto 0; */
+    width: 50%;
+    font-size:32px;
+    line-height: 40px;
+    background-color: var(--light-bg);
+    position:relative;
+    margin-top: -20px;
+    padding-top: 43px;
+  }
+  .onebytwo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .w33 {
+    width:50%;
+  }
   header {
     flex-direction: row;
   }
-  main {
+  /* main {
     width: 90%;
-  }
+  } */
   nav {
     padding-right: 6%;
     display: inline-block;
@@ -365,7 +474,7 @@ footer li a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
-    padding: 0.5%;
+    padding: 0;
   }
   #work .content {
     flex: 9;
@@ -387,6 +496,21 @@ footer li a {
   }
 }
 @media (min-width:480px){
+  #home a {
+    text-decoration: none;
+    width: auto;
+    margin-top:0;
+  }
+  #blog {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding:10px;
+  }
+  .w33 {
+    width:33%;
+  }
   .left,
 .right {
   width: 50%;

@@ -1,16 +1,27 @@
 import React from "react";
-import { StyledReport, StyledWall, StyledCalculator, StyledPuzzle, StyledBuddy } from "./styles/Work.styled";
+import { StyledEvent, StyledReport, StyledWall, StyledCalculator, StyledPuzzle, StyledBuddy } from "./styles/Work.styled";
 
 function Work() {
      return (
           <section id="work">
                <div className="side">
+
                     <h2>Work</h2>
                </div>
                <div className="content">
                     <StyledReport className="project">
                          <div className="overlay"></div>
-                         <a href="https://www.ambitsuccess.com" className="{report} " target="_blank" rel="noreferrer">
+                         <a href="https://events.ambitenergy.com.com" className="{event} " target="_blank" rel="noopener noreferrer">
+                              <div className="project-title">
+                                   <h2>EVENTS CENTER</h2>
+                                   Layout reworked to incorporate a better way to present many events without leaving any important element.<br />
+                                   PHP/JS/SQL/BSTRP/EE
+                              </div>
+                         </a>
+                    </StyledReport>
+                    <StyledReport className="project">
+                         <div className="overlay"></div>
+                         <a href="https://www.ambitsuccess.com" className="{report} " target="_blank" rel="noopener noreferrer">
                               <div className="project-title">
                                    <h2>AMBITSUCCESS</h2>
                                    Full Site to showcase the best network marketers from Texas and Northwest North East
@@ -21,7 +32,7 @@ function Work() {
                     </StyledReport>
                     <StyledWall className="project">
                          <div className="overlay"></div>
-                         <a href="https://google.com" className="{wall}" target="_blank" rel="noreferrer">
+                         <a href="https://wwww.ambitcares.org" className="{wall}" target="_blank" rel="noopener noreferrer">
 
                               <div className="project-title">
                                    <h2>AMBIT CARES</h2>
@@ -32,7 +43,7 @@ function Work() {
                     </StyledWall>
                     <StyledCalculator className="project">
                          <div className="overlay"></div>
-                         <a href="https://jvnotetaker.herokuapp.com/notes" className="{calculator}" target="_blank" rel="noreferrer">
+                         <a href="https://jvnotetaker.herokuapp.com/notes" className="{calculator}" target="_blank" rel="noopener noreferrer">
 
                               <div className="project-title">
                                    <h2>NOTE TAKER</h2>
@@ -43,7 +54,7 @@ function Work() {
                     </StyledCalculator>
                     <StyledPuzzle className="project">
                          <div className="overlay"></div>
-                         <a href="https://jvmynuxt.herokuapp.com/" className="{puzzle}" target="_blank" rel="noreferrer">
+                         <a href="https://jvmynuxt.herokuapp.com/" className="{puzzle}" target="_blank" rel="noopener noreferrer">
 
                               <div className="project-title">
                                    <h2>VueJs with NUXT</h2>
@@ -53,7 +64,7 @@ function Work() {
                     </StyledPuzzle>
                     <StyledBuddy className="project">
                          <div className="overlay"></div>
-                         <a href="https://google.com" className="{buddy}" target="_blank" rel="noreferrer">
+                         <a href="https://google.com" className="{buddy}" target="_blank" rel="noopener noreferrer">
 
                               <div className="project-title">
                                    <h2>Run Buddy</h2>

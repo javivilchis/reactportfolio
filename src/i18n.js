@@ -11,7 +11,7 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    debug: true,
+    debug: false,
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
@@ -28,13 +28,57 @@ i18n
             privacy: "Privacy Policy"
           },
           welcome: {
-            part1: 'Welcome to Javier Vilchis Portfolio, please take a moment to browse around this website. If you happen to see anything that interests you within this site, please contact Javier from any of the available channels in',
-            link: 'here',
+            part1: 'Hi! I\'m Javier Vilchis a full-stack web developer and multimedia designer with years of experience in creating websites from idea to completion by using the latest coding standards in the market, take a look at some projects I have worked on over the years. ',
+            link: 'check it out!',
             part2: 'Visit the work area',
             header1: '- Marketing Strategy',
             header2: '- Customer Experience',
             header3: '- UX / UI Design',
             header4: '- Web Development'
+          },
+          news: {
+            header: {title: "News about my journey"},
+            one: {
+              title: 'Cowtown Marathon Ultra',
+              about: 'This past weekend, I won the Cowtown Marathon Ultra distance in an unexpected way, follow my story about the before and after...',
+              link: 'read more'
+            },
+            two: {
+              title: 'Added Messaging',
+              about: 'I have added messaging to this website, expect updates, news and messages from me to all the visitors of this website.',
+              link: 'read more'
+            },
+            three: {
+              title: 'New Year Run',
+              about: 'Every year we run from Dallat to Ft. Worth to end the year, this past year was a special one, because more races were starting to open.',
+              link: 'read more'
+            },
+            four: {
+              title: 'Irving Marathon 10th Anniversary',
+              about: 'I ran the Irving Half marathon on a last minute basis, I fell off my bike over the weekend prior and hurt my right side rib cage.',
+              link: 'read more'
+            },
+            five: {
+              title: 'React Native App',
+              about: 'This year I\'ve taken the challenge to create mobile apps utilizing react native by the way of creating video tutorials.',
+              link: 'view tutorials'
+            },
+            six: {
+              title: '12 Hr. Climb',
+              about: 'I was able to participate in a closed group challenge in Utah at the basin. The challenge was to complete as many climbs in 12 hrs.',
+              link: 'read more'
+            },
+            seven: {
+              title: 'Inevitable Injury',
+              about: 'Yes, some injuries are inevitable and my time has come to take the time to heal, it was caused by many factors and here they are.',
+              link: 'read more'
+            },
+            eight: {
+              title: 'Happy New Year 2023',
+              about: 'Thank you for beign by my side all through out 2022! May you have a glorious year full of accomplishments and happy thoughts in the lows and the highs!! Let\'s do epic stuff!',
+              link: 'More to come'
+            }
+
           },
           about: {
             title: 'About Me',
@@ -64,12 +108,51 @@ i18n
           },
           welcome: {
             part1: 'Bienvenido a la pagina sitio web del Portfolio de Javier Vilchis, tómese un momento para navegar por este sitio web. Si ve algo que le interesa dentro de este sitio, comuníquese con Javier desde cualquiera de los canales disponibles',
-            link: 'aqui',
+            link: 'hechales un vistaso.',
             part2: 'Visita el area de trabajo',
             header1: '- Estrategia de mercadeo',
             header2: '- Experiencia del cliente',
             header3: '- Diseño UX / UI',
             header4: '- Desarrollo web'
+          },
+          news: {
+            header: {title: 'Noticias sobre mi viaje'},
+            one: {
+              title: 'Cowtown Marathon Ultra',
+              about: 'Este pasado fin de semana gané la distancia Cowtown Marathon Ultra de una manera inesperada, sigue mi historia sobre el antes y el después...',
+              link: 'lee mas'
+            },
+            two: {
+              title: 'Added Messaging',
+              about: 'He agregado mensajes a este sitio web, espero actualizaciones, noticias y mensajes míos para todos los visitantes de este sitio web.',
+              link: 'read more'
+            },
+            three: {
+              title: 'Corrida de año nuevo',
+              about: 'Cada año corremos de Dallat a Ft. Vale la pena terminar el año, este año pasado fue especial, porque comenzaban a abrirse más carreras.',
+              link: 'read more'
+            },
+            four: {
+              title: 'Irving Marathon 10 Aniversario',
+              about: 'Corri el medio maraton en el evento decidido al ultimo momento. El fin de semana pasado tuve un incidente en mi bici que me dejo adolorido de mis costillas.',
+              link: 'leer mas'
+            },
+            five: {
+              title: 'Applicacion con React Native',
+              about: 'Este año mi proposito es crear applicaciones para servicios mobiles usando react native y demostrando el prcesso via tutoriales en video.',
+              link: 'ver turoriales'
+            },
+            seven: {
+              title: 'Lesión inevitable',
+              about: 'Sí, algunas lesiones son inevitables y ha llegado mi momento de tomarme el tiempo para sanar, fue causado por muchos factores y aquí están.',
+              link: 'leer más'
+            },
+            eight: {
+              title: 'Feliz año nuevo 2023',
+              about: '¡Gracias por estar a mi lado durante todo el 2022! ¡Que tengas un año glorioso lleno de logros y pensamientos felices en los altibajos! ¡Hagamos cosas épicas!',
+              link: 'Más por venir'
+            }
+
           },
           about: {
             title: 'Hacerca de mí',
