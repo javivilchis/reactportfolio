@@ -43,7 +43,7 @@ const projects = [
     description: 'A mobile app development website for a leading mobile app development compay.',
     image: './src/images/app-sense-website.png',
     technologies: ['React', 'Node.js', 'Axios'],
-    github: '',
+    github: 'https://github.com/javivilchis',
     liveUrl: 'https://www.app-sense.com'
   }
 ];
