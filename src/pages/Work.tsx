@@ -38,6 +38,14 @@ const projects = [
     githubUrl: 'https://www.ambitenergy.com',
     liveUrl: 'https://www.ambitenergy.com',
   },
+  {
+    title: 'App Sense Website',
+    description: 'A mobile app development website for a leading mobile app development compay.',
+    image: './src/images/app-sense-webite.png',
+    technologies: ['React', 'Node.js', 'Axios'],
+    github: '',
+    liveUrl: 'https://www.app-sense.com'
+  }
 ];
 
 const Work: React.FC = () => {
