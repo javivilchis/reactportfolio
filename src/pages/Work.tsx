@@ -6,7 +6,7 @@ const projects = [
     title: 'Ambit Cares',
     description:
       'A full-featured website to receive and track donations.',
-    image: './src/images/ambitcares-website.png',
+    image: '/images/ambitcares-website.png',
     technologies: ['HTML', 'Javascript', 'RESTFUL API', 'PHP'],
     githubUrl: 'https://www.ambitcares.org',
     liveUrl: 'https://www.ambitcares.org',
@@ -15,7 +15,7 @@ const projects = [
     title: 'Events Center',
     description:
       'A collaborative task management application with real-time updates and team features.',
-    image: './src/images/eventscenter-website.png',
+    image: '/images/eventscenter-website.png',
     technologies: ['HTML/CSS', 'Expression Engine', 'PHP'],
     githubUrl: 'https://events.ambitenergy.com',
     liveUrl: 'https://events.ambitenergy.com',
@@ -24,7 +24,7 @@ const projects = [
     title: 'Ambitsuccess',
     description:
       'A secure healthcare portal for managing patient records and appointments.',
-    image: './src/images/ambitsuccess-website.png',
+    image: '/images/ambitsuccess-website.png',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'WebRTC'],
     githubUrl: 'https://www.ambitsuccess.com',
     liveUrl: 'https://www.ambitsuccess.com',
@@ -33,7 +33,7 @@ const projects = [
     title: 'Ambit Energy Customer App.',
     description:
       'A Simple application to view/pay your bill and see your kwh usage.',
-    image: './src/images/customer-app-feature-en.png',
+    image: '/images/customer-app-feature-en.png',
     technologies: ['React', 'ReactNative', 'Node.js', 'Redux'],
     githubUrl: 'https://www.ambitenergy.com',
     liveUrl: 'https://www.ambitenergy.com',
@@ -41,7 +41,7 @@ const projects = [
   {
     title: 'App Sense Website',
     description: 'A mobile app development website for a leading mobile app development compay.',
-    image: './src/images/app-sense-website.png',
+    image: '/images/app-sense-website.png',
     technologies: ['React', 'Node.js', 'Axios'],
     github: 'https://github.com/javivilchis',
     liveUrl: 'https://www.app-sense.com'
