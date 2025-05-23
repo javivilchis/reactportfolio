@@ -1,0 +1,18 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /posts/{postId} {
+      // Allow reading published posts without authentication
+      allow read: if resource.data.published == true;
+      
+      // Allow authenticated users to read all their own posts
+      allow read: if request.auth != null && resource.data.user_id == request.auth.uid;
+      
+      // Allow authenticated users to create posts
+      allow create: if request.auth != null;
+      
+      // Allow users to update/delete their own posts
+      allow update, delete: if request.auth != null && resource.data.user_id == request.auth.uid;
+    }
+  }
+}
