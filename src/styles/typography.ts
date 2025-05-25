@@ -1,0 +1,19 @@
+export const typographyClass = `
+  prose
+  lg:prose-xl
+  max-w-none
+  prose-headings:font-semibold
+  prose-headings:text-gray-900
+  prose-p:text-gray-700
+  prose-p:leading-relaxed
+  prose-img:rounded-xl
+  prose-img:shadow-md
+  prose-a:text-indigo-600
+  hover:prose-a:underline
+  prose-blockquote:border-l-4
+  prose-blockquote:border-indigo-600
+  prose-blockquote:bg-gray-50
+  prose-blockquote:px-4
+  prose-blockquote:py-2
+  prose-li:marker:text-indigo-500
+`;

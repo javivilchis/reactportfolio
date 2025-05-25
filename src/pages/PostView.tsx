@@ -5,6 +5,7 @@ import { Calendar, ArrowLeft, Tag } from 'lucide-react';
 import { db } from '../lib/firebase';
 import { collection, query, where, getDocs, Timestamp } from 'firebase/firestore';
 import { logClick, logBlogInteraction, logPageView } from '../lib/firebase';
+import { typographyClass } from '../styles/typography'; // <-- make sure this exports a string of Tailwind classes
 
 interface Post {
   id: string;
@@ -31,22 +32,17 @@ const PostView: React.FC = () => {
     const fetchPost = async () => {
       try {
         const postsRef = collection(db, 'posts');
-        const q = query(
-          postsRef,
-          where('slug', '==', slug)
-        );
-        
+        const q = query(postsRef, where('slug', '==', slug));
         const querySnapshot = await getDocs(q);
-        
+
         if (querySnapshot.empty) {
           throw new Error('Post not found');
         }
 
         const doc = querySnapshot.docs[0];
         const data = doc.data();
-        
-        // Convert Timestamp to string for display
-        const created_at = data.created_at instanceof Timestamp 
+
+        const created_at = data.created_at instanceof Timestamp
           ? data.created_at.toDate().toISOString()
           : data.created_at;
 
@@ -55,10 +51,9 @@ const PostView: React.FC = () => {
           ...data,
           created_at
         } as Post;
-        
+
         setPost(postData);
 
-        // Log page view with post details
         logPageView('blog_post', {
           post_id: postData.id,
           post_title: postData.title,
@@ -66,7 +61,6 @@ const PostView: React.FC = () => {
           categories: postData.categories
         });
 
-        // Log blog interaction for post view
         logBlogInteraction('post_view', postData);
       } catch (err) {
         console.error('Error fetching post:', err);
@@ -112,7 +106,7 @@ const PostView: React.FC = () => {
   }
 
   return (
-    <article className="max-w-[1920px] mx-auto">
+    <article className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
       <button
         onClick={handleBackClick}
         className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 my-8"
@@ -120,21 +114,21 @@ const PostView: React.FC = () => {
         <ArrowLeft className="h-4 w-4 mr-1" />
         Back to Blog
       </button>
-      
+
       {post.image_url && (
         <img
           src={post.image_url}
           alt={post.title}
-          className="w-full h-96 object-cover rounded-lg mb-8"
+          className="w-full max-h-[500px] object-cover rounded-lg mb-8"
         />
       )}
-      
+
       <h1 className="text-4xl font-bold text-gray-900 mb-4">{post.title}</h1>
-      
+
       {post.subtitle && (
         <p className="text-xl text-gray-600 mb-6">{post.subtitle}</p>
       )}
-      
+
       <div className="flex items-center text-sm text-gray-500 mb-6">
         <Calendar className="h-4 w-4 mr-1" />
         <time dateTime={post.created_at.toString()}>
@@ -155,9 +149,9 @@ const PostView: React.FC = () => {
           ))}
         </div>
       )}
-      
-      <div 
-        className="prose prose-lg max-w-none"
+
+      <div
+        className={typographyClass}
         dangerouslySetInnerHTML={{ __html: post.html_content || post.content }}
       />
     </article>
