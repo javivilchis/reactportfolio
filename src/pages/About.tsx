@@ -11,17 +11,20 @@ const About: React.FC = () => {
             About Me
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
-          Hi, I'm a passionate web developer, machine learning and AI connoisseur with expertise in multimedia design and extensive experience in building the best customer experience. My background encompasses numerous successful projects creating beautiful, functional, and user-friendly applications, specializing in modern web technologies while maintaining a keen eye for design.
-          
-          </p>
+          Hey there — I’m a creative problem-solver and people-first digital leader with over a decade of experience blending design, branding, and full-stack web development. I love building things that not only look great but actually work for people.
+</p>
+          <p className="text-xl text-gray-600 leading-relaxed mb-8">
+I’ve led cross-functional teams, mentored both designers and developers, and taken projects from rough idea to polished launch. I'm bilingual (English + Spanish) and passionate about creating experiences that connect across cultures — especially in today’s diverse, digital world.
+</p>
           <p className="text-xl text-gray-600 leading-relaxed">
-          When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through blog posts and technical workshops. My combination of technical skills and design sensibility allows me to craft exceptional digital experiences that truly engage users.
+Whether it’s managing a website redesign, guiding a dev team, or making sure a campaign hits just right, I’m all about collaboration, clarity, and making an impact. I’m ready to help you succeed—whether you’re launching a big campaign, tackling a small project, or just need some expert guidance. I’d love to be part of your success.
           </p>
+         
         </div>
         <div className="relative">
           <img
             src="/images/javier_vilchis_duo_purple.png"
-            alt="Developer at work"
+            alt="Javier Vilchis Digital Leader"
             className=""
           />
           <div className="absolute inset-0 xbg-indigo-600 opacity-10 rounded-lg"></div>
@@ -63,7 +66,7 @@ const About: React.FC = () => {
             Project Delivery
           </h3>
           <p className="text-gray-600">
-            Successfully delivered 50+ projects for clients worldwide
+            Successfully delivered 20+ projects for clients worldwide
           </p>
         </div>
       </div>

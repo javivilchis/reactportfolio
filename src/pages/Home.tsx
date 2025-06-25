@@ -45,11 +45,11 @@ const Home: React.FC = () => {
         <div className="relative h-full flex items-center">
           <div className="max-w-4xl mx-auto px-4">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              Full Stack Developer
-              <span className="block text-indigo-400">& Multi Media Designer</span>
+              <strong>Creative Web Leader</strong> 
+              <span className="block text-indigo-400">Bridging Design & Development</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl">
-              Creating beautiful, functional, and user-friendly digital experiences. Passionate about clean code and modern design.
+With over 10 years of experience in design, development, and branding, I’m here to help you make a lasting impact online.
             </p>
             <div className="flex space-x-6">
               <a
