@@ -295,7 +295,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} JaviVilchis. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} JaviVilchis. All rights reserved. Version 1.0.1 20251006.1</p>
           </div>
         </div>
       </footer>
